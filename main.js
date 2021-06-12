@@ -21,11 +21,12 @@ function move(e) {
     if (mouse_state == "mouse_down") {
         x = e.clientX - canvas.offsetLeft;
         y = e.clientY - canvas.offsetTop;
+
         console.log("Mouse X = " + x);
         console.log("Mouse Y = " + y);
 
         ctx.beginPath();
-        ctx.styleStroke = color;
+        ctx.strokeStyle = color;
         ctx.lineWidth = width;
         ctx.arc(x , y , radius , 0 , 360);
         ctx.stroke();
