@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(back.jpg);
+            background-size: cover;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #my_canvas {
+            background-color: aqua;
+        }
+
+        button {
+            width: 10%;
+            height: 7%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Project 82</title>
+</head>
+<body>
+    <h1>Circle drawing app</h1>
+    <br><br>
+    <canvas width="1000" height="500" id="my_canvas"></canvas>
+    <br><br>
+    <span>Radius of Circle &nbsp;&nbsp;&nbsp;&nbsp;<input id="radius_input" placeholder="Radius of Circle here" type="number" value="50"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>Width of line &nbsp;&nbsp;&nbsp;&nbsp;<input id="line_width" placeholder="Width of Line here" type="number" value="2"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>Color of line &nbsp;&nbsp;<input id="line_color" placeholder="Color of line here" type="text" value="black"></span><br><br>
+    <button class="btn btn-success" onclick="clear_canvas()" type="button">Clear</button>
+    <script src="main.js"></script>
+</body>
+</html>
